@@ -14,7 +14,6 @@ const MainLayout = ({ children }: MainLayoutProps) => {
   const [sidebarOpen, setSidebarOpen] = useState(true);
   const isMobile = useIsMobile();
   
-  // Auto-collapse sidebar on mobile
   const isCollapsed = isMobile ? false : !sidebarOpen;
 
   return (
@@ -23,7 +22,7 @@ const MainLayout = ({ children }: MainLayoutProps) => {
         <Sidebar className="h-screen w-64">
           <SidebarHeader className="p-4 border-b border-border">
             <h2 className="text-xl font-bold">GeoInsights</h2>
-            <p className="text-sm text-muted-foreground">Data visualization platform</p>
+            <p className="text-sm text-muted-foreground">Plataforma de visualização de dados</p>
           </SidebarHeader>
           <SidebarContent className="p-0">
             <NavLinks />
@@ -45,11 +44,11 @@ const MainLayout = ({ children }: MainLayoutProps) => {
             className="md:flex"
           >
             <Menu className="h-5 w-5" />
-            <span className="sr-only">Toggle Menu</span>
+            <span className="sr-only">Alternar Menu</span>
           </Button>
           <div className="flex items-center gap-4">
-            <Button variant="outline" size="sm">Help</Button>
-            <Button size="sm">Get Started</Button>
+            <Button variant="outline" size="sm">Ajuda</Button>
+            <Button size="sm">Começar</Button>
           </div>
         </header>
 

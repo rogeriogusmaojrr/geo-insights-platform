@@ -3,11 +3,11 @@ import { Home, Map, BarChart2, Settings, Layers } from "lucide-react";
 import { NavLink } from "react-router-dom";
 
 const links = [
-  { name: "Dashboard", to: "/", icon: Home },
-  { name: "Map Explorer", to: "/map", icon: Map },
-  { name: "Data Insights", to: "/insights", icon: BarChart2 },
-  { name: "Data Layers", to: "/layers", icon: Layers },
-  { name: "Settings", to: "/settings", icon: Settings },
+  { name: "Painel", to: "/", icon: Home },
+  { name: "Explorador de Mapa", to: "/map", icon: Map },
+  { name: "Análise de Dados", to: "/insights", icon: BarChart2 },
+  { name: "Camadas de Dados", to: "/layers", icon: Layers },
+  { name: "Configurações", to: "/settings", icon: Settings },
 ];
 
 const NavLinks = () => {
